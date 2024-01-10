@@ -13,4 +13,4 @@ Flask-Mail==0.9.1
 Flask-Bcrypt==1.0.1
 Flask-Cors==3.0.10
 playwright==1.40.0
-requests=2.31.0
+requests==2.31.0
