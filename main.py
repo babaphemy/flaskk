@@ -11,7 +11,7 @@ def index():
 
 @app.route("/seo", methods=["POST"])
 def handle_seo():
-    ww = request.get_data()
+    ww = request.form
     print(request.form)
     print(request.json)
     result = seo.get_geolocation(ww["url"])
