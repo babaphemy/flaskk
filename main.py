@@ -13,9 +13,10 @@ def index():
 def handle_seo():
     ww = request.form
     print(request.form)
+    print(request.form())
     print(request.json)
     print(request.get_json())
-    result = seo.get_geolocation(ww["url"])
+    result = seo.get_geolocation(ww.get('url'))
     return jsonify(result), 200
 
 
