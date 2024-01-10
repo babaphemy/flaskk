@@ -16,7 +16,8 @@ def handle_seo():
     print(request.form)
     print(request.json)
     print(request.get_json())
-    result = seo.get_geolocation(ww.get('url'))
+    print(ww.get('url'))
+    result = seo.get_geolocation()
     return jsonify(result), 200
 
 
