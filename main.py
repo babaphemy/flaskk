@@ -12,7 +12,7 @@ def index():
 @app.route("/seo", methods=["POST"])
 def handle_seo():
     ww = request.json
-    result = seo.handle_seo(ww["url"])
+    result = seo.get_geolocation(ww["url"])
     return jsonify(result), 200
 
 
