@@ -11,7 +11,7 @@ def index():
 
 @app.route("/seo", methods=["POST"])
 def handle_seo():
-    ww = request.form
+    ww = request.json
     print(request.form)
     print(request.form)
     print(request.json)
